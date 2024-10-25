@@ -4,21 +4,26 @@
 </summary>
 sudo docker pull ubuntu:22.04
 sudo docker run -it --name dam_ubuntu 
-
+<details>
+  <summary>
 **Dentro del contenedor** 
+    </summary>
 apt update 
 apt upgrade
-_Instalamos Apache_
+<details><summary>_Instalamos Apache_</summary>
 apt install -y apache2 apache2-utils
-_Instalamos MariaDB_
-apt install -y mariadb-server mariadb-client
-_Instalar PHP_
+  </details>
+<summary>_Instalamos MariaDB_</summary>
+<details>apt install -y mariadb-server mariadb-client
+  </details>
+<details><summary>_Instalar PHP_</summary>
 apt install -y php php-mysql libapache2-mod-php
-
+</details>
 <details>
 <summary>_Iniciamos los servicios_</summary>
 service mariadb start
 service apache2 start
+  </details>
   </details>
 </details>
 <details><summary>
