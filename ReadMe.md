@@ -15,9 +15,11 @@ apt install -y mariadb-server mariadb-client
 _Instalar PHP_
 apt install -y php php-mysql libapache2-mod-php
 
-_Iniciamos los servicios_
+<details>
+<summary>_Iniciamos los servicios_</summary>
 service mariadb start
 service apache2 start
+  </details>
 </details>
 <details><summary>
 # 2. Utiliza esta guía para instalar wordpress en el contenedor.
